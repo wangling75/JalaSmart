@@ -1,0 +1,10 @@
+{
+  "domain": "jalasmart",
+  "name": "JalaSmart Control",
+  "version": "1.0.1",
+  "documentation": "https://github.com/your_repo",
+  "requirements": [],
+  "codeowners": [],
+  "config_flow": true,
+  "iot_class": "cloud_polling"
+}

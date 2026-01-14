@@ -1,0 +1,44 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "连接 JalaSmart 设备",
+        "description": "请输入设备的线路信息和认证 Token",
+        "data": {
+          "line_id": "线路 ID (LineID)",
+          "line_no": "线路号 (例如 41)",
+          "auth_token": "认证 Token",
+          "device_type": "设备类型"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "连接失败",
+      "invalid_auth": "认证 Token 无效",
+      "unknown": "未知错误"
+    },
+    "abort": {
+      "already_configured": "该线路已配置，请勿重复添加"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "voltage": { "name": "电压" },
+      "current": { "name": "电流" },
+      "power": { "name": "功率" },
+      "electricity": { "name": "用电量" },
+      "temp": { "name": "温度" }
+    },
+    "switch": {
+      "main_switch": { "name": "开关" },
+      "lock_switch": { "name": "锁定控制" }
+    },
+    "number": {
+      "under": { "name": "欠压保护阈值" },
+      "over": { "name": "过压保护阈值" },
+      "max": { "name": "额定电流" },
+      "duration": { "name": "过流延时" },
+      "limit": { "name": "月用电限制" }
+    }
+  }
+}
